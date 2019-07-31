@@ -4,8 +4,10 @@
 #called by trap
 my_func(){
 	s=`cat message.txt`
-	echo message from $PID -> $s
+	echo message from $PID:
+	echo $s
 	rm message.txt
+	echo Write some letter for $PID
 }
 
 #trap used for react on signal
